@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - THE AGENCY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Same styles as before */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f1f1;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 120px 20px;
+            background-color: #1d1d1d;
+            color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #f0c14b;
+            color: #1d1d1d;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f0a500;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1d1d1d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* New animation for the services */
+        .service-item {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInService 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInService {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .services-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+        }
+
+        .services-list li {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            transition: all 0.3s ease;
+            text-align: left;
+            opacity: 0;
+        }
+
+        .services-list li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .services-list li h3 {
+            font-size: 1.8rem;
+            color: #1d1d1d;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .services-list li p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #f0c14b;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .services-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services-list li {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="fade-in">Welcome to THE AGENCY</h1>
+    <p class="fade-in">Your trusted partner in digital transformation.</p>
+    <a href="#services" class="cta-button fade-in">Explore Our Services</a>
+    <a href="contact.html" class="cta-button fade-in" style="background-color: #004d7a; margin-top: 20px;">Contact Us</a>
+    <a href="about.html" class="cta-button fade-in" style="background-color: #28a745; margin-top: 20px;">More About Us</a>
+</header>
+
+<section id="services">
+    <h2 class="fade-in">Our Digital Solutions</h2>
+    <ul class="services-list">
+        <li class="service-item fade-in">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website’s visibility on search engines and drive more organic traffic to your site.</p>
+        </li>
+        <li class="service-item fade-in">
+            <h3>Social Media Marketing</h3>
+            <p>Build your brand presence and engage with your audience on platforms like Instagram, Facebook, and TikTok.</p>
+        </li>
+        <li class="service-item fade-in">
+            <h3>Web Development</h3>
+            <p>Create responsive, user-friendly websites that convert visitors into customers.</p>
+        </li>
+        <li class="service-item fade-in">
+            <h3>Content Creation</h3>
+            <p>Develop engaging content that resonates with your target audience and drives results.</p>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 THE AGENCY. All Rights Reserved.</p>
+    <div class="social-media">
+        <a href="https://www.instagram.com/theagency112" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@hardwear.bg" target="_blank">TikTok</a>
+    </div>
+</footer>
+
+</body>
+</html>

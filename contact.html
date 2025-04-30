@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - THE AGENCY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f1f1;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            text-align: center;
+            padding: 120px 20px;
+            background-color: #1d1d1d;
+            color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #f0c14b;
+            color: #1d1d1d;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f0a500;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #1d1d1d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .submit-btn {
+            background-color: #004d7a;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #FF6F61;
+        }
+
+        .go-back {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004d7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .go-back:hover {
+            background-color: #FF6F61;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        .social-media a {
+            color: white;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .social-media a:hover {
+            color: #f0c14b;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="fade-in">Contact Us</h1>
+    <p class="fade-in">We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+</header>
+
+<section>
+    <h2 class="fade-in">Get In Touch</h2>
+    <form>
+        <div class="form-group fade-in">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group fade-in">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group fade-in">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn fade-in">Send Message</button>
+    </form>
+
+    <a href="index.html" class="go-back fade-in">Go Back</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 THE AGENCY. All Rights Reserved.</p>
+    <div class="social-media">
+        <a href="https://www.instagram.com/theagency112" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@hardwear.bg" target="_blank">TikTok</a>
+    </div>
+</footer>
+
+</body>
+</html>
